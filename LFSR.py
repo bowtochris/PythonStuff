@@ -15,7 +15,7 @@ class LFSRRand():
         self.seed(seed)
         
     def seed(self, seed):
-        if(seed != None or seed > 0):
+        if(seed != None and seed > 0):
             self.val = seed
         else:
             self.val = int(time.time_ns())
